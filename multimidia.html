@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multimídia | Pedro Oliveira</title>
+    <link rel="stylesheet" href="css/estilos.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <div class="brand-block">
+          <h1>Pedro de Oliveira Rodrigues</h1>
+        </div>
+        <nav class="main-nav" aria-label="Menu principal">
+          <ul class="nav-list">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="curriculo.html">Currículo</a></li>
+            <li><a href="formulario.html">Formulário</a></li>
+            <li><a class="active" href="multimidia.html">Multimídia</a></li>
+            <li><a href="graficos.html">Gráficos</a></li>
+          </ul>
+        </nav>
+        <div class="visitor-controls">
+          <button class="button button-secondary" id="theme-toggle" type="button" aria-pressed="false">Ativar tema escuro</button>
+          <form class="welcome-form" id="welcome-form" hidden>
+            <label for="visitor-name">Como podemos chamar você?</label>
+            <input id="visitor-name" name="name" type="text" maxlength="60" autocomplete="given-name" required />
+            <button class="button button-secondary" type="submit">Salvar nome</button>
+          </form>
+          <p class="welcome-message" id="welcome-message" role="status" aria-live="polite" hidden></p>
+          <p class="storage-feedback" id="storage-feedback" role="status" aria-live="polite"></p>
+        </div>
+      </div>
+    </header>
+
+    <main class="page-main">
+      <div class="container">
+        <section class="content-panel" aria-labelledby="multimidia-titulo">
+          <div class="section-header">
+            <h2 id="multimidia-titulo">Multimídia</h2>
+          </div>
+
+          <div class="media-grid">
+            <article class="content-card media-card">
+              <h2>Vídeo</h2>
+              <video width="640" height="360" controls autoplay muted loop>
+                <source src="media/codigos.mp4" type="video/mp4" />
+                Seu navegador não suporta a tag de vídeo.
+              </video>
+            </article>
+
+            <article class="content-card media-card">
+              <h2>Áudio</h2>
+              <audio controls preload="metadata">
+                <source src="audio/audiocalmo.mp3" type="audio/mpeg" />
+                Seu navegador não suporta a tag de áudio.
+              </audio>
+            </article>
+
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© 2026 Pedro Oliveira — todos os direitos reservados.</p>
+      </div>
+    </footer>
+    <script src="js/scripts.js" defer></script>
+  </body>
+</html>

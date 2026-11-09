@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currículo | Pedro Oliveira</title>
+    <link rel="stylesheet" href="css/estilos.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <div class="brand-block">
+          <h1>Pedro de Oliveira Rodrigues</h1>
+        </div>
+        <nav class="main-nav" aria-label="Menu principal">
+          <ul class="nav-list">
+            <li><a href="index.html">Início</a></li>
+            <li><a class="active" href="curriculo.html">Currículo</a></li>
+            <li><a href="formulario.html">Formulário</a></li>
+            <li><a href="multimidia.html">Multimídia</a></li>
+            <li><a href="graficos.html">Gráficos</a></li>
+          </ul>
+        </nav>
+        <div class="visitor-controls">
+          <button class="button button-secondary" id="theme-toggle" type="button" aria-pressed="false">Ativar tema escuro</button>
+          <form class="welcome-form" id="welcome-form" hidden>
+            <label for="visitor-name">Como podemos chamar você?</label>
+            <input id="visitor-name" name="name" type="text" maxlength="60" autocomplete="given-name" required />
+            <button class="button button-secondary" type="submit">Salvar nome</button>
+          </form>
+          <p class="welcome-message" id="welcome-message" role="status" aria-live="polite" hidden></p>
+          <p class="storage-feedback" id="storage-feedback" role="status" aria-live="polite"></p>
+        </div>
+      </div>
+    </header>
+
+    <main class="page-main">
+      <div class="container">
+        <section class="content-panel cv-panel" aria-labelledby="curriculo-titulo">
+          <div class="section-header cv-heading">
+            <h2 id="curriculo-titulo">Currículo</h2>
+          </div>
+
+          <article class="cv-topic cv-formation">
+            <h3>Formação</h3>
+            <table class="cv-table" aria-label="Formação acadêmica">
+              <tbody>
+                <tr>
+                  <th scope="row">Ensino médio</th>
+                  <td>Ensino médio completo, SESI Braz cubas.</td>
+                </tr>
+                <tr>
+                  <th scope="row">Ensino superior</th>
+                  <td>Análise e Desenvolvimento de Sistemas, em andamento.</td>
+                </tr>
+                <tr>
+                  <th scope="row">Formação complementar</th>
+                  <td>Cursos de HTML, CSS e lógica de programação.</td>
+                </tr>
+              </tbody>
+            </table>
+          </article>
+
+          <article class="cv-topic cv-experience">
+            <h3>Experiência</h3>
+            <table class="cv-table" aria-label="Experiências profissionais">
+              <thead>
+                <tr>
+                  <th>Período</th>
+                  <th>Cargo</th>
+                  <th>Atividades</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>2023 - atual</td>
+                  <td>Estagiário de suporte</td>
+                  <td>Atendimento ao cliente, organização de tarefas e apoio em rotinas administrativas.</td>
+                </tr>
+                <tr>
+                  <td>2022 - 2023</td>
+                  <td>Monitor de laboratório</td>
+                  <td>Auxílio em atividades acadêmicas e manutenção básica de equipamentos.</td>
+                </tr>
+                <tr>
+                  <td>2021 - 2022</td>
+                  <td>Voluntário em projeto social</td>
+                  <td>Organização de ações comunitárias e apoio pedagógico.</td>
+                </tr>
+              </tbody>
+            </table>
+          </article>
+
+          <article class="cv-topic cv-skills">
+            <h3>Habilidades</h3>
+            <ul class="skill-list">
+              <li>HTML semântico e estruturação de páginas.</li>
+              <li>CSS para layouts responsivos e estilos consistentes.</li>
+              <li>Design de interfaces e pensamento centrado no usuário.</li>
+              <li>Comunicação clara e organização de informações.</li>
+              <li>Trabalho em equipe e aprendizado contínuo.</li>
+            </ul>
+          </article>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© 2026 Pedro de Oliveira Rodrigues — todos os direitos reservados.</p>
+      </div>
+    </footer>
+    <script src="js/scripts.js" defer></script>
+  </body>
+</html>

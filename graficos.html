@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gráficos | Pedro Oliveira</title>
+    <link rel="stylesheet" href="css/estilos.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <div class="brand-block">
+          <h1>Pedro de Oliveira Rodrigues</h1>
+        </div>
+        <nav class="main-nav" aria-label="Menu principal">
+          <ul class="nav-list">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="curriculo.html">Currículo</a></li>
+            <li><a href="formulario.html">Formulário</a></li>
+            <li><a href="multimidia.html">Multimídia</a></li>
+            <li><a class="active" href="graficos.html">Gráficos</a></li>
+          </ul>
+        </nav>
+        <div class="visitor-controls">
+          <button class="button button-secondary" id="theme-toggle" type="button" aria-pressed="false">Ativar tema escuro</button>
+          <form class="welcome-form" id="welcome-form" hidden>
+            <label for="visitor-name">Como podemos chamar você?</label>
+            <input id="visitor-name" name="name" type="text" maxlength="60" autocomplete="given-name" required />
+            <button class="button button-secondary" type="submit">Salvar nome</button>
+          </form>
+          <p class="welcome-message" id="welcome-message" role="status" aria-live="polite" hidden></p>
+          <p class="storage-feedback" id="storage-feedback" role="status" aria-live="polite"></p>
+        </div>
+      </div>
+    </header>
+
+    <main class="page-main">
+      <div class="container">
+        <section class="content-panel" aria-labelledby="graficos-titulo">
+          <div class="section-header">
+            <h2 id="graficos-titulo">Gráficos e ilustrações</h2>
+          </div>
+
+          <div class="two-column">
+            <article class="content-card graph-card">
+              <h2>Horas de estudo por semana</h2>
+              <canvas id="graficoCanvas" width="420" height="240" aria-label="Gráfico de horas de estudo por semana, desenhado em canvas"></canvas>
+            </article>
+
+            <article class="content-card graph-card">
+              <h2>Aprendizagem por tecnologia</h2>
+              <svg class="grafico-svg" viewBox="0 0 420 240" role="img" aria-label="Nível de aprendizagem por tecnologia">
+                <rect class="barra" x="45" y="70" width="50" height="120" />
+                <rect class="barra" x="120" y="90" width="50" height="100" />
+                <rect class="barra" x="195" y="110" width="50" height="80" />
+                <rect class="barra" x="270" y="82" width="50" height="108" />
+                <rect class="barra" x="345" y="130" width="50" height="60" />
+                <text class="desc" x="70" y="215">HTML</text>
+                <text class="desc" x="145" y="215">CSS</text>
+                <text class="desc" x="220" y="215">JS</text>
+                <text class="desc" x="295" y="215">UX</text>
+                <text class="desc" x="370" y="215">Git</text>
+              </svg>
+            </article>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© 2026 Pedro de Oliveira Rodrigues — todos os direitos reservados.</p>
+      </div>
+    </footer>
+
+    <script src="js/scripts.js" defer></script>
+  </body>
+</html>
