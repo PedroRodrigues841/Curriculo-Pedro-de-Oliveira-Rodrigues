@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/estilos.css" />
   </head>
   <body>
+    <a class="skip-link" href="#conteudo-principal">Pular para o conteúdo principal</a>
     <header class="site-header">
       <div class="container">
         <div class="brand-block">
@@ -17,7 +18,7 @@
             <li><a href="index.html">Início</a></li>
             <li><a href="curriculo.html">Currículo</a></li>
             <li><a href="formulario.html">Formulário</a></li>
-            <li><a class="active" href="multimidia.html">Multimídia</a></li>
+            <li><a class="active" href="multimidia.html" aria-current="page">Multimídia</a></li>
             <li><a href="graficos.html">Gráficos</a></li>
           </ul>
         </nav>
@@ -34,7 +35,7 @@
       </div>
     </header>
 
-    <main class="page-main">
+    <main class="page-main" id="conteudo-principal" tabindex="-1">
       <div class="container">
         <section class="content-panel" aria-labelledby="multimidia-titulo">
           <div class="section-header">
@@ -44,7 +45,7 @@
           <div class="media-grid">
             <article class="content-card media-card">
               <h2>Vídeo</h2>
-              <video width="640" height="360" controls autoplay muted loop>
+              <video width="640" height="360" controls muted>
                 <source src="media/codigos.mp4" type="video/mp4" />
                 Seu navegador não suporta a tag de vídeo.
               </video>

@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/estilos.css" />
   </head>
   <body>
+    <a class="skip-link" href="#conteudo-principal">Pular para o conteúdo principal</a>
     <header class="site-header">
       <div class="container">
         <div class="brand-block">
@@ -18,7 +19,7 @@
             <li><a href="curriculo.html">Currículo</a></li>
             <li><a href="formulario.html">Formulário</a></li>
             <li><a href="multimidia.html">Multimídia</a></li>
-            <li><a class="active" href="graficos.html">Gráficos</a></li>
+            <li><a class="active" href="graficos.html" aria-current="page">Gráficos</a></li>
           </ul>
         </nav>
         <div class="visitor-controls">
@@ -34,7 +35,7 @@
       </div>
     </header>
 
-    <main class="page-main">
+    <main class="page-main" id="conteudo-principal" tabindex="-1">
       <div class="container">
         <section class="content-panel" aria-labelledby="graficos-titulo">
           <div class="section-header">
@@ -44,12 +45,13 @@
           <div class="two-column">
             <article class="content-card graph-card">
               <h2>Horas de estudo por semana</h2>
-              <canvas id="graficoCanvas" width="420" height="240" aria-label="Gráfico de horas de estudo por semana, desenhado em canvas"></canvas>
+              <canvas id="graficoCanvas" width="420" height="240" role="img" aria-label="Gráfico de horas de estudo por semana" aria-describedby="grafico-horas-descricao"></canvas>
+              <p class="visually-hidden" id="grafico-horas-descricao">Horas de estudo: semana 1, 4 horas; semana 2, 6 horas; semana 3, 8 horas; semana 4, 7 horas; semana 5, 10 horas.</p>
             </article>
 
             <article class="content-card graph-card">
               <h2>Aprendizagem por tecnologia</h2>
-              <svg class="grafico-svg" viewBox="0 0 420 240" role="img" aria-label="Nível de aprendizagem por tecnologia">
+              <svg class="grafico-svg" viewBox="0 0 420 240" role="img" aria-label="Nível relativo de aprendizagem por tecnologia" aria-describedby="aprendizagem-descricao">
                 <rect class="barra" x="45" y="70" width="50" height="120" />
                 <rect class="barra" x="120" y="90" width="50" height="100" />
                 <rect class="barra" x="195" y="110" width="50" height="80" />
@@ -61,6 +63,7 @@
                 <text class="desc" x="295" y="215">UX</text>
                 <text class="desc" x="370" y="215">Git</text>
               </svg>
+              <p class="visually-hidden" id="aprendizagem-descricao">O gráfico compara níveis relativos de aprendizagem: HTML apresenta o maior nível, seguido por UX, CSS, JavaScript e Git.</p>
             </article>
           </div>
         </section>

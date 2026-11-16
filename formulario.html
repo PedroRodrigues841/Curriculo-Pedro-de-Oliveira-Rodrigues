@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/estilos.css" />
   </head>
   <body>
+    <a class="skip-link" href="#conteudo-principal">Pular para o conteúdo principal</a>
     <header class="site-header">
       <div class="container">
         <div class="brand-block">
@@ -16,7 +17,7 @@
           <ul class="nav-list">
             <li><a href="index.html">Início</a></li>
             <li><a href="curriculo.html">Currículo</a></li>
-            <li><a class="active" href="formulario.html">Formulário</a></li>
+            <li><a class="active" href="formulario.html" aria-current="page">Formulário</a></li>
             <li><a href="multimidia.html">Multimídia</a></li>
             <li><a href="graficos.html">Gráficos</a></li>
           </ul>
@@ -34,7 +35,7 @@
       </div>
     </header>
 
-    <main class="page-main">
+    <main class="page-main" id="conteudo-principal" tabindex="-1">
       <div class="container">
         <section class="content-panel form-card" aria-labelledby="formulario-titulo">
           <div class="section-header">
@@ -69,7 +70,7 @@
 
               <div class="field full">
                 <label for="assunto">Assunto</label>
-                <select id="assunto" name="assunto" required>
+                <select id="assunto" name="assunto" aria-describedby="assunto-erro" required>
                   <option value="">Selecione uma opção</option>
                   <option value="projeto">Projeto</option>
                   <option value="duvida">Dúvida</option>
@@ -86,12 +87,14 @@
               </div>
 
               <div class="field full">
-                <label>Como prefere ser contatado?</label>
-                <div class="choice-group" role="radiogroup" aria-label="Preferência de contato" aria-describedby="preferencia-erro">
-                  <label for="contato-email"><input id="contato-email" name="preferencia" type="radio" value="email" required /> E-mail</label>
-                  <label for="contato-tel"><input id="contato-tel" name="preferencia" type="radio" value="telefone" /> Telefone</label>
-                  <label for="contato-whats"><input id="contato-whats" name="preferencia" type="radio" value="whatsapp" /> WhatsApp</label>
-                </div>
+                <fieldset class="choice-fieldset" aria-describedby="preferencia-erro">
+                  <legend>Como prefere ser contatado?</legend>
+                  <div class="choice-group">
+                    <label for="contato-email"><input id="contato-email" name="preferencia" type="radio" value="email" required /> E-mail</label>
+                    <label for="contato-tel"><input id="contato-tel" name="preferencia" type="radio" value="telefone" /> Telefone</label>
+                    <label for="contato-whats"><input id="contato-whats" name="preferencia" type="radio" value="whatsapp" /> WhatsApp</label>
+                  </div>
+                </fieldset>
                 <small class="field-error" id="preferencia-erro"></small>
               </div>
 

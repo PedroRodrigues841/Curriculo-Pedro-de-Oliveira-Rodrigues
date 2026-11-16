@@ -170,7 +170,7 @@ const contactForm = document.getElementById("contact-form");
 
 if (contactForm) {
   const formFeedback = document.getElementById("form-feedback");
-  const preferenceGroup = contactForm.querySelector('[role="radiogroup"]');
+  const preferenceGroup = contactForm.querySelector(".choice-fieldset");
   const preferenceError = document.getElementById("preferencia-erro");
   const preferenceInputs = contactForm.querySelectorAll('input[name="preferencia"]');
   const newsletterInput = document.getElementById("newsletter");

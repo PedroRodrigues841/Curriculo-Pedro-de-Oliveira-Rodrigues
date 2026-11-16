@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/estilos.css" />
   </head>
   <body>
+    <a class="skip-link" href="#conteudo-principal">Pular para o conteúdo principal</a>
     <header class="site-header">
       <div class="container">
         <div class="brand-block">
@@ -15,7 +16,7 @@
         <nav class="main-nav" aria-label="Menu principal">
           <ul class="nav-list">
             <li><a href="index.html">Início</a></li>
-            <li><a class="active" href="curriculo.html">Currículo</a></li>
+            <li><a class="active" href="curriculo.html" aria-current="page">Currículo</a></li>
             <li><a href="formulario.html">Formulário</a></li>
             <li><a href="multimidia.html">Multimídia</a></li>
             <li><a href="graficos.html">Gráficos</a></li>
@@ -34,7 +35,7 @@
       </div>
     </header>
 
-    <main class="page-main">
+    <main class="page-main" id="conteudo-principal" tabindex="-1">
       <div class="container">
         <section class="content-panel cv-panel" aria-labelledby="curriculo-titulo">
           <div class="section-header cv-heading">
@@ -66,9 +67,9 @@
             <table class="cv-table" aria-label="Experiências profissionais">
               <thead>
                 <tr>
-                  <th>Período</th>
-                  <th>Cargo</th>
-                  <th>Atividades</th>
+                  <th scope="col">Período</th>
+                  <th scope="col">Cargo</th>
+                  <th scope="col">Atividades</th>
                 </tr>
               </thead>
               <tbody>
