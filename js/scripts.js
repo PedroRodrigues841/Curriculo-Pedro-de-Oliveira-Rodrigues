@@ -122,7 +122,7 @@ function renderSavedItems() {
     const removeButton = document.createElement("button");
 
     label.textContent = item;
-    removeButton.className = "remove-saved-item";
+    removeButton.className = "remove-saved-item btn btn-sm btn-outline-secondary";
     removeButton.type = "button";
     removeButton.dataset.removeSavedItem = item;
     removeButton.textContent = "Remover";

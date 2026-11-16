@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pedro de Oliveira Rodrigues | Página pessoal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
     <link rel="stylesheet" href="css/estilos.css" />
   </head>
   <body>
@@ -23,11 +24,11 @@
           </ul>
         </nav>
         <div class="visitor-controls">
-          <button class="button button-secondary" id="theme-toggle" type="button" aria-pressed="false">Ativar tema escuro</button>
+          <button class="btn btn-outline-light" id="theme-toggle" type="button" aria-pressed="false">Ativar tema escuro</button>
           <form class="welcome-form" id="welcome-form" hidden>
             <label for="visitor-name">Como podemos chamar você?</label>
             <input id="visitor-name" name="name" type="text" maxlength="60" autocomplete="given-name" required />
-            <button class="button button-secondary" type="submit">Salvar nome</button>
+            <button class="btn btn-outline-light" type="submit">Salvar nome</button>
           </form>
           <p class="welcome-message" id="welcome-message" role="status" aria-live="polite" hidden></p>
           <p class="storage-feedback" id="storage-feedback" role="status" aria-live="polite"></p>
@@ -38,8 +39,8 @@
     <main class="page-main" id="conteudo-principal" tabindex="-1">
       <div class="container">
         <section class="page-banner" aria-labelledby="titulo-principal">
-          <div class="hero-grid">
-            <div>
+          <div class="hero-grid row g-4 align-items-center">
+            <div class="col-12 col-md-8">
               <p class="eyebrow">Quem sou eu</p>
               <h1 id="titulo-principal">Estudante, curioso e apaixonado por tecnologia</h1>
               <p class="lead">
@@ -47,14 +48,14 @@
                 UX, design funcional e criar soluções práticas para problemas reais.
               </p>
               <ul class="inline-list" aria-label="Interesses principais">
-                <li><span>HTML</span><button class="save-item" type="button" data-save-item="HTML" aria-pressed="false">Salvar</button></li>
-                <li><span>CSS</span><button class="save-item" type="button" data-save-item="CSS" aria-pressed="false">Salvar</button></li>
-                <li><span>UX/UI</span><button class="save-item" type="button" data-save-item="UX/UI" aria-pressed="false">Salvar</button></li>
-                <li><span>Inovação</span><button class="save-item" type="button" data-save-item="Inovação" aria-pressed="false">Salvar</button></li>
+                <li><span>HTML</span><button class="save-item btn btn-sm btn-outline-secondary" type="button" data-save-item="HTML" aria-pressed="false">Salvar</button></li>
+                <li><span>CSS</span><button class="save-item btn btn-sm btn-outline-secondary" type="button" data-save-item="CSS" aria-pressed="false">Salvar</button></li>
+                <li><span>UX/UI</span><button class="save-item btn btn-sm btn-outline-secondary" type="button" data-save-item="UX/UI" aria-pressed="false">Salvar</button></li>
+                <li><span>Inovação</span><button class="save-item btn btn-sm btn-outline-secondary" type="button" data-save-item="Inovação" aria-pressed="false">Salvar</button></li>
               </ul>
             </div>
-            <figure class="profile-card">
-              <img class="avatar" src="https://i.pinimg.com/736x/3a/bf/05/3abf0567c54acf4ca9657949325f8fdc.jpg" alt="Foto de Pedro de Oliveira Rodrigues" />
+            <figure class="profile-card col-12 col-md-4">
+              <img class="avatar img-fluid" src="https://i.pinimg.com/736x/3a/bf/05/3abf0567c54acf4ca9657949325f8fdc.jpg" alt="Foto de Pedro de Oliveira Rodrigues" />
             </figure>
           </div>
         </section>
@@ -71,40 +72,42 @@
           <div class="section-header">
             <h2 id="resumo-titulo">Resumo profissional</h2>
           </div>
-          <table class="summary-table" aria-label="Resumo profissional">
-            <tbody>
-              <tr>
-                <th scope="row">Perfil</th>
-                <td>
-                  <ul class="check-list">
-                    <li>Procuro combinar lógica, criatividade e comunicação para transformar ideias em experiências digitais claras,
-                    úteis e bem estruturadas.</li>
-                  </ul>
-                </td>
-              </tr>
-              <tr>
-                <th scope="row">Objetivos</th>
-                <td>
-                  <ul class="check-list">
-                    <li>Aprender desenvolvimento front-end com foco em qualidade.</li>
-                    <li>Construir interfaces acessíveis e visualmente consistentes.</li>
-                    <li>Aplicar boas práticas de organização e semântica em projetos.</li>
-                  </ul>
-                </td>
-              </tr>
-              <tr>
-                <th scope="row">Interesses</th>
-                <td>
-                  <ul class="check-list">
-                    <li>Desenvolvimento web.</li>
-                    <li>Design de interfaces.</li>
-                    <li>Automação e produtividade.</li>
-                    <li>Aprendizado contínuo.</li>
-                  </ul>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+          <div class="table-responsive">
+            <table class="summary-table table" aria-label="Resumo profissional">
+              <tbody>
+                <tr>
+                  <th scope="row">Perfil</th>
+                  <td>
+                    <ul class="check-list">
+                      <li>Procuro combinar lógica, criatividade e comunicação para transformar ideias em experiências digitais claras,
+                      úteis e bem estruturadas.</li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">Objetivos</th>
+                  <td>
+                    <ul class="check-list">
+                      <li>Aprender desenvolvimento front-end com foco em qualidade.</li>
+                      <li>Construir interfaces acessíveis e visualmente consistentes.</li>
+                      <li>Aplicar boas práticas de organização e semântica em projetos.</li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">Interesses</th>
+                  <td>
+                    <ul class="check-list">
+                      <li>Desenvolvimento web.</li>
+                      <li>Design de interfaces.</li>
+                      <li>Automação e produtividade.</li>
+                      <li>Aprendizado contínuo.</li>
+                    </ul>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </section>
       </div>
     </main>

@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Currículo | Pedro Oliveira</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
     <link rel="stylesheet" href="css/estilos.css" />
   </head>
   <body>
@@ -23,11 +24,11 @@
           </ul>
         </nav>
         <div class="visitor-controls">
-          <button class="button button-secondary" id="theme-toggle" type="button" aria-pressed="false">Ativar tema escuro</button>
+          <button class="btn btn-outline-light" id="theme-toggle" type="button" aria-pressed="false">Ativar tema escuro</button>
           <form class="welcome-form" id="welcome-form" hidden>
             <label for="visitor-name">Como podemos chamar você?</label>
             <input id="visitor-name" name="name" type="text" maxlength="60" autocomplete="given-name" required />
-            <button class="button button-secondary" type="submit">Salvar nome</button>
+            <button class="btn btn-outline-light" type="submit">Salvar nome</button>
           </form>
           <p class="welcome-message" id="welcome-message" role="status" aria-live="polite" hidden></p>
           <p class="storage-feedback" id="storage-feedback" role="status" aria-live="polite"></p>
@@ -44,52 +45,56 @@
 
           <article class="cv-topic cv-formation">
             <h3>Formação</h3>
-            <table class="cv-table" aria-label="Formação acadêmica">
-              <tbody>
-                <tr>
-                  <th scope="row">Ensino médio</th>
-                  <td>Ensino médio completo, SESI Braz cubas.</td>
-                </tr>
-                <tr>
-                  <th scope="row">Ensino superior</th>
-                  <td>Análise e Desenvolvimento de Sistemas, em andamento.</td>
-                </tr>
-                <tr>
-                  <th scope="row">Formação complementar</th>
-                  <td>Cursos de HTML, CSS e lógica de programação.</td>
-                </tr>
-              </tbody>
-            </table>
+            <div class="table-responsive">
+              <table class="cv-table table" aria-label="Formação acadêmica">
+                <tbody>
+                  <tr>
+                    <th scope="row">Ensino médio</th>
+                    <td>Ensino médio completo, SESI Braz cubas.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Ensino superior</th>
+                    <td>Análise e Desenvolvimento de Sistemas, em andamento.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Formação complementar</th>
+                    <td>Cursos de HTML, CSS e lógica de programação.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </article>
 
           <article class="cv-topic cv-experience">
             <h3>Experiência</h3>
-            <table class="cv-table" aria-label="Experiências profissionais">
-              <thead>
-                <tr>
-                  <th scope="col">Período</th>
-                  <th scope="col">Cargo</th>
-                  <th scope="col">Atividades</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>2023 - atual</td>
-                  <td>Estagiário de suporte</td>
-                  <td>Atendimento ao cliente, organização de tarefas e apoio em rotinas administrativas.</td>
-                </tr>
-                <tr>
-                  <td>2022 - 2023</td>
-                  <td>Monitor de laboratório</td>
-                  <td>Auxílio em atividades acadêmicas e manutenção básica de equipamentos.</td>
-                </tr>
-                <tr>
-                  <td>2021 - 2022</td>
-                  <td>Voluntário em projeto social</td>
-                  <td>Organização de ações comunitárias e apoio pedagógico.</td>
-                </tr>
-              </tbody>
-            </table>
+            <div class="table-responsive">
+              <table class="cv-table table" aria-label="Experiências profissionais">
+                <thead>
+                  <tr>
+                    <th scope="col">Período</th>
+                    <th scope="col">Cargo</th>
+                    <th scope="col">Atividades</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>2023 - atual</td>
+                    <td>Estagiário de suporte</td>
+                    <td>Atendimento ao cliente, organização de tarefas e apoio em rotinas administrativas.</td>
+                  </tr>
+                  <tr>
+                    <td>2022 - 2023</td>
+                    <td>Monitor de laboratório</td>
+                    <td>Auxílio em atividades acadêmicas e manutenção básica de equipamentos.</td>
+                  </tr>
+                  <tr>
+                    <td>2021 - 2022</td>
+                    <td>Voluntário em projeto social</td>
+                    <td>Organização de ações comunitárias e apoio pedagógico.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </article>
 
           <article class="cv-topic cv-skills">
